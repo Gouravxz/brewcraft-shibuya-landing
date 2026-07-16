@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaymentGetway</title>
+    <title>Checkout - BrewCraft</title>
+    <link rel="stylesheet" href="buy.css">
 </head>
 <body>
-    <h1 class="buy">Go back Coming soon!</h1>
+    <header>
+        <div class="navlogo">
+            <a class="a" href="index.html"><h1>BrewCraft</h1></a>
+            <a class="a" href="index.html"><div class="nav">Home</div></a>
+            <a class="a" href="rev.html"><div class="nav">Reviews</div></a>
+            <a class="a" href="contact.html"><div class="nav">Contacts</div></a>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <h2>Complete Your Order 🛒</h2>
+
+        <div class="checkout-wrapper">
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="product-item">
+                    <img src="ramen.jpg" alt="Selected Item" class="item-img">
+                    <div class="item-details">
+                        <h4>Special Ramen</h4>
+                        <p class="price">Price: ₹250</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="price-details">
+                    <p>Subtotal: <span>₹250</span></p>
+                    <p>Delivery Fee: <span>₹30</span></p>
+                    <hr>
+                    <h3>Total Payable: <span class="total">₹280</span></h3>
+                </div>
+            </div>
+
+            <form class="checkout-form">
+                <h3>Delivery Details</h3>
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Enter 10-digit mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Delivery Address</label>
+                    <textarea rows="3" placeholder="Enter street address, house no." required></textarea>
+                </div>
+
+                <h3>Payment Method</h3>
+                <div class="payment-options">
+                    <label><input type="radio" name="payment" checked> Cash on Delivery (COD)</label>
+                    <label><input type="radio" name="payment"> UPI / Online Payment</label>
+                </div>
+<button type="submit" id="sub" >Place Order 🚀</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>☕️ BrewCraft Coffee Co. | <a class="email" href="mailto:order@brewcraft.com">email: order@brewcraft.com</a> ©2026 BrewCraft. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+    background-color: #fdeded;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navlogo {
+    background-color: #AE150D;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #fdeded;
+    font-size: 1.8rem;
+}
+
+.nav {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.nav:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout & Review Cards */
+.review-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+.hd {
+    text-align: center;
+}
+
+.hd h2 {
+    color: #AE150D;
+    margin-bottom: 20px;
+}
+
+.reviews-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    border-left: 5px solid #AE150D;
+}
+
+.review-card h3 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.review-card p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Form Styling */
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.rat {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 350px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#sub {
+    color: white;
+    background-color: #3d5926;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#sub:hover {
+    color: white;
+    background-color: #AE150D;
+}
+
+/* Rating Summary */
+.rating-summary {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.rating-summary h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.rating-summary span {
+    color: #3d5926;
+    font-weight: bold;
+}
+
+.rating-summary p {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+
+.foot {
+    background-color: #AE150D;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.foot p {
+    font-size: 0.85rem;
+    word-wrap: break-word;
+}
+
+.email {
+    color: #fdeded;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .navlogo {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .form-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rat {
+        max-width: 100%;
+    }
+
+    #sub {
+        width: 100%;
+    }
+}

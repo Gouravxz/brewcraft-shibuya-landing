@@ -188,8 +188,7 @@ h3 {
     color: #8B0000;
     margin-bottom: 10px;
 }
-
-/* Footer Fix */
+/* Footer */
 footer {
     margin-top: 50px;
 }
@@ -200,16 +199,17 @@ footer {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    overflow-x: auto;
 }
 
-.foot pre {
+.foot p {
     font-size: 0.85rem;
-    white-space: pre-wrap;
     word-wrap: break-word;
 }
+
 .email {
-    color: black;
+    color: #fdeded;
+    font-weight: bold;
+
 }
 .momo {
     background-size: cover ;

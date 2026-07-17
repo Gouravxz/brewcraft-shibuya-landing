@@ -411,3 +411,13 @@ main {
 .btn-green-buy:hover {
     background-color: #218838 !important;
 }
+.wel {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #AE150D;
+    color: #fc8800;
+    margin-top: 90px;
+    border-radius: 10px;
+}
